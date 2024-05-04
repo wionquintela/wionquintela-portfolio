@@ -1,0 +1,43 @@
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import ContentCards from "../ContentCards";
+import skillContent from "../skillContent";
+
+export default function Skills(props) {
+  const image = { width: "300px" };
+  const card = skillContent.map((item) => {
+    return (
+      <Col className="mb-3">
+        <ContentCards {...item} skills={true} />
+      </Col>
+    );
+  });
+  return (
+    <section>
+      <div>
+        <Container className={props.className}>
+          <div id="skills">
+            {" "}
+            <h1 className="display-3">My Skills</h1>
+            <Row
+              className="justify-content-center justify-content-sm-start"
+              lg={4}
+              sm={3}
+              xs={1}
+            >
+              {card}
+            </Row>
+            <button type="button" class="btn btn-danger btn-lg btn3d">
+              <span class="glyphicon glyphicon-cloud"></span>{" "}
+              <Nav.Link href="#projects">
+                Go to my Projects <i class="fa-solid fa-angle-down"></i>
+              </Nav.Link>
+            </button>
+          </div>
+        </Container>
+      </div>
+    </section>
+  );
+}

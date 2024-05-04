@@ -1,0 +1,36 @@
+import Button from "react-bootstrap/Button";
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
+import Image from "react-bootstrap/Image";
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+
+export default function Header(props) {
+  const image = { width: "300px" };
+  return (
+    <section>
+      <div className="text-center">
+        <Container className={props.className}>
+          <Row>
+            <Col sm={8}>
+              <div className="padding-top-lg">
+                <h1 className="display-3">Hello, I am Wion Quintela</h1>
+                <h2>Programmer/Web Developer</h2>
+                <button type="button" class="btn btn-primary btn-lg btn3d">
+                  <span class="glyphicon glyphicon-cloud"></span>{" "}
+                  <Nav.Link href="#skills">
+                    See my Skills <i class="fa-solid fa-angle-down"></i>
+                  </Nav.Link>
+                </button>
+              </div>
+            </Col>
+            <Col sm={4}>
+              {" "}
+              <Image src="./assets/myProfile.png" rounded style={image} />
+            </Col>
+          </Row>
+        </Container>
+      </div>
+    </section>
+  );
+}
