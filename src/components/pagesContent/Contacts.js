@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/Container";
@@ -6,6 +7,22 @@ import Col from "react-bootstrap/Col";
 
 export default function Contacts(props) {
   const image = { width: "300px" };
+
+  const [showPopover, setShowPopover] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
+
+  const copyToClipboard = (text) => {
+    navigator.clipboard
+      .writeText(text)
+      .then(() => {
+        setShowPopover(true);
+        setTimeout(() => setShowPopover(false), 2000); // Hide popover after 2 seconds
+      })
+      .catch((err) => {
+        console.error("Failed to copy email: ", err);
+      });
+  };
+
   return (
     <Container
       className={props.className + " d-flex justify-content-center text-center"}
@@ -28,7 +45,24 @@ export default function Contacts(props) {
                 <Card.Title>
                   <h1 className="display-3">Wion Quintela</h1>
                   <h6>
-                    <i>wionquintela06@gmail.com</i>
+                    <span
+                      style={{
+                        cursor: "pointer",
+                        color: isHovered ? "blue" : "inherit",
+                      }}
+                      onClick={() =>
+                        copyToClipboard("wionquintela06@gmail.com")
+                      }
+                      onMouseEnter={() => setIsHovered(true)}
+                      onMouseLeave={() => setIsHovered(false)}
+                    >
+                      <i>wionquintela06@gmail.com</i>
+                    </span>
+                    {showPopover && (
+                      <span style={{ marginLeft: "5px", color: "green" }}>
+                        Copied!
+                      </span>
+                    )}
                   </h6>
                 </Card.Title>
                 <Card.Text style={{ padding: "15px" }}>
