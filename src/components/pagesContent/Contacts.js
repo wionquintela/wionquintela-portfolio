@@ -33,7 +33,7 @@ export default function Contacts(props) {
                 </Card.Title>
                 <Card.Text style={{ padding: "15px" }}>
                   Hello, I am a self-taught web developer currently in Grade 12
-                  as a STEM student. I plan to pursue Computer Science in
+                  as a STEM Student. I plan to pursue Computer Science in
                   college to further my programming skills and aim for a career
                   as a Software Engineer/Front End Developer. I am passionate
                   about learning and look forward to sharing my knowledge with
