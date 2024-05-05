@@ -32,7 +32,7 @@ export default function ContentCards(props) {
         />
       </div>
       <Card.Body>
-        <Card.Title>
+        <Card.Title style={{ fontWeight: "bold" }}>
           {props.title}{" "}
           {props.expertise && (
             <Badge pill bg={badgeColor}>

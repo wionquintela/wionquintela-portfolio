@@ -1,6 +1,6 @@
 @font-face {
   font-family: myFont;
-  src: url("./fonts/Lato-Black.ttf");
+  src: url("./fonts/Outfit-VariableFont_wght.ttf");
 }
 
 body {
@@ -10,12 +10,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
 
 /* Header responsiveness*/
 .headerSection {

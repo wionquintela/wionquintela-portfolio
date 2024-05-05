@@ -14,7 +14,9 @@ export default function Header(props) {
           <Row>
             <Col sm={8}>
               <div className="padding-top-lg">
-                <h1 className="display-3">Hello, I am Wion Quintela</h1>
+                <h1 className="display-3" style={{ fontWeight: "bold" }}>
+                  Hello, I am Wion Quintela
+                </h1>
                 <h2>Programmer/Web Developer</h2>
                 <button type="button" class="btn btn-primary btn-lg btn3d">
                   <span class="glyphicon glyphicon-cloud"></span>{" "}

@@ -20,7 +20,12 @@ export default function Projects(props) {
         <Container className={props.className}>
           <div id="projects">
             {" "}
-            <h1 className="display-3">My Projects</h1>
+            <h1
+              className="display-3"
+              style={{ fontWeight: "bold", paddingTop: "40px" }}
+            >
+              My Projects
+            </h1>
             <Row
               className="justify-content-center justify-content-sm-start"
               lg={2}
