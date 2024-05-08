@@ -15,8 +15,12 @@ export default function Header(props) {
             <Col sm={8}>
               <div className="padding-top-lg">
                 <h1 className="display-3" style={{ fontWeight: "bold" }}>
-                  Hello, I am Wion Quintela
+                  Hello, I am{" "}
+                  <span style={{ display: "inline", color: "#476A77" }}>
+                    Wion Quintela
+                  </span>
                 </h1>
+
                 <h2>Programmer/Web Developer</h2>
                 <button type="button" class="btn btn-primary btn-lg btn3d">
                   <span class="glyphicon glyphicon-cloud"></span>{" "}

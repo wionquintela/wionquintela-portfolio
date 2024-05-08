@@ -26,7 +26,7 @@ export default function Skills(props) {
             <Row
               className="justify-content-center justify-content-sm-start"
               lg={4}
-              sm={3}
+              sm={2}
               xs={1}
             >
               {card}
