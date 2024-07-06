@@ -4,7 +4,7 @@ import { Container, Nav, Navbar } from "react-bootstrap";
 export default function Navigation(props) {
   return (
     <>
-      <Navbar bg="dark" data-bs-theme="dark">
+      <Navbar style={{ fontWeight: "bold" }}>
         <Container>
           <Navbar.Brand href="#home">Wion</Navbar.Brand>
           <Nav className="me-auto">

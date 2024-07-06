@@ -18,13 +18,15 @@ export default function Skills(props) {
     <section>
       <div>
         <Container className={props.className}>
-          <div id="skills">
+          <div id="skills" style={{ paddingTop: "40px" }}>
             {" "}
-            <h1 className="display-3">My Skills</h1>
+            <h1 className="display-3" style={{ fontWeight: "bold" }}>
+              My Skills
+            </h1>
             <Row
               className="justify-content-center justify-content-sm-start"
               lg={4}
-              sm={3}
+              sm={2}
               xs={1}
             >
               {card}
