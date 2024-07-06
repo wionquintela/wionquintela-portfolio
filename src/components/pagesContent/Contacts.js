@@ -62,7 +62,10 @@ export default function Contacts(props) {
                       <i>wionquintela06@gmail.com</i>
                     </span>
                     {showPopover && (
-                      <span style={{ marginLeft: "5px", color: "green" }}>
+                      <span
+                        style={{ marginLeft: "5px", color: "white" }}
+                        className="bg-success p-2 rounded"
+                      >
                         Copied!
                       </span>
                     )}

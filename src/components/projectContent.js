@@ -7,8 +7,14 @@ export default [
   },
   {
     title: "WIZZY SNEAKERS",
-    image: "./assets/wizzysneakers.png",
+    image: "./assets/wizzySneakers.png",
     text: "WIZZY SNEAKERS is a Nike store clone which is basically a mockup ecommerce shoe store. ",
     link: "https://wizzy-sneakers.vercel.app/",
+  },
+  {
+    title: "WIZZY SNEAKERS 2.0",
+    image: "./assets/wizzy2.png",
+    text: "This is the updated version or improved creation of the former wizzy sneakers. created in TailwindCSS.",
+    link: "https://wizzy-sneakers-2-0.vercel.app/",
   },
 ];

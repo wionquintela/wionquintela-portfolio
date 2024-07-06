@@ -10,10 +10,10 @@ export default function ContentCards(props) {
       badgeColor = "primary";
       break;
     case "Intermediate":
-      badgeColor = "warning";
+      badgeColor = "success";
       break;
     case "Advanced":
-      badgeColor = "success";
+      badgeColor = "danger";
       break;
   }
   return (

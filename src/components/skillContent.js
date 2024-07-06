@@ -2,13 +2,19 @@ export default [
   {
     title: "ReactJS",
     image: "./assets/reactIcon.png",
-    expertise: "Advanced",
+    expertise: "Intermediate",
     text: "JavaScript library for building user interfaces.",
   },
   {
     title: "Bootstrap",
     image: "./assets/bootstrap.png",
     expertise: "Advanced",
+    text: "Front-end framework for responsive web design.",
+  },
+  {
+    title: "Tailwind CSS",
+    image: "./assets/tailwind.png",
+    expertise: "Intermediate",
     text: "Front-end framework for responsive web design.",
   },
   {
