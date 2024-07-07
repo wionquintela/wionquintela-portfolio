@@ -31,10 +31,10 @@ export default function Skills(props) {
             >
               {card}
             </Row>
-            <button type="button" class="btn btn-danger btn-lg btn3d">
+            <button type="button" class="btn btn-primary btn-lg ">
               <span class="glyphicon glyphicon-cloud"></span>{" "}
               <Nav.Link href="#projects">
-                Go to my Projects <i class="fa-solid fa-angle-down"></i>
+                Go to my Projects <i class="fa-solid fa-diagram-project"></i>
               </Nav.Link>
             </button>
           </div>

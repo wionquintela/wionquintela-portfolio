@@ -22,10 +22,9 @@ export default function Header(props) {
                 </h1>
 
                 <h2>Programmer/Web Developer</h2>
-                <button type="button" class="btn btn-primary btn-lg btn3d">
-                  <span class="glyphicon glyphicon-cloud"></span>{" "}
+                <button type="button" class="btn btn-primary btn-lg ">
                   <Nav.Link href="#skills">
-                    See my Skills <i class="fa-solid fa-angle-down"></i>
+                    See my Skills <i class="fa-solid fa-code"></i>
                   </Nav.Link>
                 </button>
               </div>

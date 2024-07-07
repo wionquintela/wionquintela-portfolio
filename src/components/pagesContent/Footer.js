@@ -4,8 +4,8 @@ export default function Footer(props) {
 
   return (
     <>
-      <div className={props.className} style={bg}>
-        <h5 style={{ fontWeight: "bold" }}>
+      <div className={props.className}>
+        <h5 style={{ fontWeight: "bold", fontSize: "13px" }}>
           @ {currentYear} Wion Quintela. All Rights Reserved.
         </h5>
       </div>

@@ -8,7 +8,7 @@ import Footer from "./components/pagesContent/Footer";
 function App() {
   return (
     <div className="App">
-      <Navigation />
+      {/* <Navigation /> */}
       <Header className="headerSection" />
       <Skills className="contentSection text-center" />
       <Projects className="contentSection text-center" />

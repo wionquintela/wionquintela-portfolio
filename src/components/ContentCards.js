@@ -51,7 +51,7 @@ export default function ContentCards(props) {
           )}
         </Card.Text>
         {!props.skills && (
-          <button type="button" className="btn btn-success btn-sm btn3d">
+          <button type="button" className="btn btn-success btn-sm ">
             <a
               href={props.link}
               target="_blank"
