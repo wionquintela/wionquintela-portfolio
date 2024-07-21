@@ -14,7 +14,7 @@ export default function Header(props) {
           <Row>
             <Col sm={8}>
               <div className="padding-top-lg">
-                <h1 className="display-3" style={{ fontWeight: "bold" }}>
+                <h1 className="display-1" style={{ fontWeight: "bold" }}>
                   Hello, I am{" "}
                   <span style={{ display: "inline", color: "#476A77" }}>
                     Wion Quintela

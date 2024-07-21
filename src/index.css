@@ -1,13 +1,13 @@
 @font-face {
   font-family: myFont;
-  src: url("./fonts/Outfit-VariableFont_wght.ttf");
+  src: url("../public/fonts/coolvetica rg.otf");
 }
 
 body {
   margin: 0;
   font-family: myFont;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
 }
 
 

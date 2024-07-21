@@ -19,7 +19,7 @@ export default function ContentCards(props) {
   return (
     <Card
       style={{ maxWidth: props.skills ? "600px" : "100%" }}
-      className={!props.skills && "shadow"}
+      className="shadow"
     >
       <div
         className="d-flex justify-content-center align-items-center"
@@ -34,22 +34,13 @@ export default function ContentCards(props) {
       <Card.Body>
         <Card.Title style={{ fontWeight: "bold" }}>
           {props.title}{" "}
-          {props.expertise && (
+          {/* {props.expertise && (
             <Badge pill bg={badgeColor}>
               {props.expertise}
             </Badge>
-          )}
+          )} */}
         </Card.Title>
-        <Card.Text>
-          {props.text ? (
-            props.text
-          ) : (
-            <p>
-              Skills include problem solving, leadership, adaptability,
-              communication skills, creativity, and responsibility.
-            </p>
-          )}
-        </Card.Text>
+        <Card.Text>{props.text}</Card.Text>
         {!props.skills && (
           <button type="button" className="btn btn-success btn-sm ">
             <a

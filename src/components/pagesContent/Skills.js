@@ -25,7 +25,7 @@ export default function Skills(props) {
             </h1>
             <Row
               className="justify-content-center justify-content-sm-start"
-              lg={4}
+              lg={2}
               sm={2}
               xs={1}
             >
