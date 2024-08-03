@@ -6,7 +6,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 
 export default function Header(props) {
-  const image = { width: "300px" };
+  const image = { width: "300px"};
   return (
     <section>
       <div className="text-center">
