@@ -6,7 +6,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 export default function Contacts(props) {
-  const image = { width: "400px" };
+  const image = { width: "300px" };
 
   const [showPopover, setShowPopover] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
