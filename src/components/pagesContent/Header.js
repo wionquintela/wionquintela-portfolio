@@ -6,7 +6,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 
 export default function Header(props) {
-  const image = { width: "300px"};
+  const image = { width: "300px" };
   return (
     <section>
       <div className="text-center">
@@ -21,7 +21,7 @@ export default function Header(props) {
                   </span>
                 </h1>
 
-                <h2>Programmer/Web Developer</h2>
+                <h2 style={{ color: "#414a4c" }}>Programmer/Web Developer</h2>
                 <button type="button" class="btn btn-primary btn-lg ">
                   <Nav.Link href="#skills">
                     See my Skills <i class="fa-solid fa-code"></i>

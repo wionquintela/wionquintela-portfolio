@@ -20,7 +20,7 @@ export default [
     expertise: "Intermediate",
   },
   {
-    title: "Nodejs",
+    title: "NodeJS",
     image: "./assets/nodejs.png",
     expertise: "Beginner",
   },

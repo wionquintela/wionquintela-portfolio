@@ -3,8 +3,7 @@
   src: url("../public/fonts/coolvetica rg.otf");
 }
 
-body {
-  margin: 0;
+* {
   font-family: myFont;
   /* -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; */

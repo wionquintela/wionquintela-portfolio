@@ -27,7 +27,11 @@ export default function Contacts(props) {
     <Container
       className={props.className + " d-flex justify-content-center text-center"}
     >
-      <Card style={{ maxWidth: "100%", marginBottom: "100px" }} id="contacts">
+      <Card
+        style={{ maxWidth: "100%", marginBottom: "100px" }}
+        id="contacts"
+        className="shadow"
+      >
         <Row lg={2} sm={1} md={1} xs={1}>
           <Col sm={4}>
             <Card.Img
@@ -59,7 +63,7 @@ export default function Contacts(props) {
                       onMouseEnter={() => setIsHovered(true)}
                       onMouseLeave={() => setIsHovered(false)}
                     >
-                      <i>wionquintela06@gmail.com</i>
+                      <i style={{ color: "green" }}>wionquintela06@gmail.com</i>
                     </span>
                     {showPopover && (
                       <span
@@ -71,7 +75,7 @@ export default function Contacts(props) {
                     )}
                   </h6>
                 </Card.Title>
-                <Card.Text style={{ padding: "15px" }}>
+                <Card.Text style={{ padding: "15px", color: "#414a4c" }}>
                   Hello, I am a self-taught web developer. A fresh high school
                   graduate planning to pursue Computer Science in college to
                   further my programming skills and aim for a career as a

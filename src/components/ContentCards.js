@@ -32,15 +32,19 @@ export default function ContentCards(props) {
         />
       </div>
       <Card.Body>
-        <Card.Title style={{ fontWeight: "bold" }}>
+        {props.skills ? (<Card.Title style={{color: "#414a4c"}}>{props.title}</Card.Title>) : (<Card.Title style={{ fontWeight: "bold" }}>
+          
           {props.title}{" "}
           {/* {props.expertise && (
             <Badge pill bg={badgeColor}>
               {props.expertise}
             </Badge>
           )} */}
-        </Card.Title>
-        <Card.Text>{props.text}</Card.Text>
+        </Card.Title>)}
+        
+        <Card.Text style={{ color: "#414a4c", fontWeight: "thin" }}>
+          {props.text}
+        </Card.Text>
         {!props.skills && (
           <button type="button" className="btn btn-success btn-md ">
             <a
