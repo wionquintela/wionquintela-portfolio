@@ -76,8 +76,7 @@ export default function Contacts(props) {
                   </h6>
                 </Card.Title>
                 <Card.Text style={{ padding: "15px", color: "#414a4c" }}>
-                  Hello, I am a self-taught web developer. A fresh high school
-                  graduate planning to pursue Computer Science in college to
+                  Hello, I am a Computer Science freshman from University of Caloocan City. I make a lot of side projects to
                   further my programming skills and aim for a career as a
                   Software Engineer/Front End Developer. I am passionate about
                   anything coding and look forward to sharing my knowledge with

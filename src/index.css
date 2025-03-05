@@ -1,6 +1,6 @@
 @font-face {
   font-family: myFont;
-  src: url("../public/fonts/coolvetica rg.otf");
+  src: url("../public/fonts/ps.ttf");
 }
 
 * {
@@ -21,10 +21,12 @@
     padding-top: 50px;
   }
 }
+
 /*social links*/
 .socialLinks {
   padding: 10px;
 }
+
 /* contact responsiveness*/
 .contactSection {
   padding-top: 200px;
@@ -35,7 +37,7 @@
 /* contact responsiveness*/
 .footerSection {
   padding-top: 20px;
-padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 

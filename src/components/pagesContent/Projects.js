@@ -27,8 +27,8 @@ export default function Projects(props) {
               My Projects
             </h1>
             <p>
-              Here are the projects that I had/have been working on to increase
-              my programming skills 😄
+              Here are the projects   that I had/have been working on to increase
+              my programming skills
             </p>
             <Row
               className="justify-content-center justify-content-sm-start"
