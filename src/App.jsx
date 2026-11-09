@@ -1,10 +1,12 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navigation from "./components/pagesContent/Navigation";
-import Header from "./components/pagesContent/Header";
-import Skills from "./components/pagesContent/Skills";
-import Projects from "./components/pagesContent/Projects";
-import Contacts from "./components/pagesContent/Contacts";
-import Footer from "./components/pagesContent/Footer";
+import Header from "./components/pagesContent/Header.jsx";
+import Skills from "./components/pagesContent/Skills.jsx";
+import Projects from "./components/pagesContent/Projects.jsx";
+import Contacts from "./components/pagesContent/Contacts.jsx";
+import Footer from "./components/pagesContent/Footer.jsx";
+import "bootstrap/dist/css/bootstrap.min.css";
+
 function App() {
   return (
     <div className="App">
