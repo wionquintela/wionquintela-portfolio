@@ -1,45 +1,28 @@
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
 import ContentCards from "../ContentCards";
 import projectContent from "../projectContent";
 
 export default function Projects(props) {
-  const image = { width: "300px" };
-  const card = projectContent.map((item) => {
-    return (
-      <Col className="mb-3">
-        <ContentCards {...item} skills={false} expertise={false} />
-      </Col>
-    );
-  });
   return (
     <section>
-      <div>
-        <Container className={props.className}>
-          <div id="projects">
-            {" "}
-            <h1
-              className="display-3"
-              style={{ fontWeight: "bold", paddingTop: "40px" }}
-            >
-              My Projects
-            </h1>
-            <p>
-              Here are the projects   that I had/have been working on to increase
-              my programming skills
-            </p>
-            <Row
-              className="justify-content-center justify-content-sm-start"
-              lg={2}
-              sm={1}
-              xs={1}
-            >
-              {card}
-            </Row>
+      <div className={`container mx-auto px-4 ${props.className || ""}`}>
+        <div id="projects">
+          {/* Section Title */}
+          <h1 className="text-5xl md:text-6xl font-bold pt-10">My Projects</h1>
+
+          <p className="mt-2">
+            Here are the projects that I had/have been working on to increase my
+            programming skills.
+          </p>
+
+          {/* Project Cards */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 justify-items-center sm:justify-items-start gap-4 mt-4">
+            {projectContent.map((item, index) => (
+              <div key={item.title || index} className="w-full mb-3">
+                <ContentCards {...item} skills={false} expertise={false} />
+              </div>
+            ))}
           </div>
-        </Container>
+        </div>
       </div>
     </section>
   );

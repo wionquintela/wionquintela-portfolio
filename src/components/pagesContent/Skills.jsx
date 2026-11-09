@@ -1,44 +1,35 @@
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
 import ContentCards from "../ContentCards";
 import skillContent from "../skillContent";
 
 export default function Skills(props) {
-  const image = { width: "300px" };
-  const card = skillContent.map((item) => {
-    return (
-      <Col className="mb-3">
-        <ContentCards {...item} skills={true} />
-      </Col>
-    );
-  });
   return (
     <section>
-      <div>
-        <Container className={props.className}>
-          <div id="skills" style={{ paddingTop: "40px" }}>
-            {" "}
-            <h1 className="display-3" style={{ fontWeight: "bold" }}>
-              My Skills
-            </h1>
-            <Row
-              className="justify-content-center justify-content-sm-start"
-              lg={3}
-              sm={2}
-              xs={2}
-            >
-              {card}
-            </Row>
-            <button type="button" class="btn btn-primary btn-lg ">
-              <span class="glyphicon glyphicon-cloud"></span>{" "}
-              <Nav.Link href="#projects">
-                Go to my Projects <i class="fa-solid fa-diagram-project"></i>
-              </Nav.Link>
-            </button>
+      <div className={`container mx-auto px-4 ${props.className || ""}`}>
+        <div id="skills" className="pt-10">
+          {/* Section Title */}
+          <h1 className="text-5xl md:text-6xl font-bold">My Skills</h1>
+
+          {/* Skill Cards */}
+          <div className="grid grid-cols-2 lg:grid-cols-3 justify-items-center sm:justify-items-start gap-4 mt-4">
+            {skillContent.map((item, index) => (
+              <div
+                key={item.title || index}
+                className="w-full mb-3 flex justify-center"
+              >
+                <ContentCards {...item} skills={true} />
+              </div>
+            ))}
           </div>
-        </Container>
+
+          {/* Projects Navigation */}
+          <a
+            href="#projects"
+            className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white text-lg font-medium px-5 py-3 rounded transition-colors"
+          >
+            Go to my Projects
+            <i className="fa-solid fa-diagram-project"></i>
+          </a>
+        </div>
       </div>
     </section>
   );

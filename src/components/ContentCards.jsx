@@ -1,62 +1,46 @@
-import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
-import Nav from "react-bootstrap/Nav";
-import Badge from "react-bootstrap/Badge";
-
 export default function ContentCards(props) {
-  let badgeColor;
-  switch (props.expertise) {
-    case "Beginner":
-      badgeColor = "primary";
-      break;
-    case "Intermediate":
-      badgeColor = "success";
-      break;
-    case "Advanced":
-      badgeColor = "danger";
-      break;
-  }
   return (
-    <Card
-      style={{ maxWidth: props.skills ? "600px" : "100%" }}
-      className="shadow"
+    <div
+      className={`w-full shadow-lg rounded-lg overflow-hidden ${
+        props.skills ? "max-w-[600px]" : "max-w-full"
+      }`}
     >
-      <div
-        className="d-flex justify-content-center align-items-center"
-        style={{ minHeight: "100px" }}
-      >
-        <Card.Img
-          variant="top"
+      {/* Image */}
+      <div className="flex justify-center items-center min-h-[100px]">
+        <img
           src={props.image}
-          style={{ width: props.skills ? "80px" : "100%" }}
+          alt={props.title}
+          className={`h-auto object-contain ${
+            props.skills ? "w-[80px]" : "w-full"
+          }`}
         />
       </div>
-      <Card.Body>
-        {props.skills ? (<Card.Title style={{color: "#414a4c"}}>{props.title}</Card.Title>) : (<Card.Title style={{ fontWeight: "bold" }}>
-          
-          {props.title}{" "}
-          {/* {props.expertise && (
-            <Badge pill bg={badgeColor}>
-              {props.expertise}
-            </Badge>
-          )} */}
-        </Card.Title>)}
-        
-        <Card.Text style={{ color: "#414a4c", fontWeight: "thin" }}>
-          {props.text}
-        </Card.Text>
-        {!props.skills && (
-          <button type="button" className="btn btn-success btn-md ">
-            <a
-              href={props.link}
-              target="_blank"
-              style={{ color: "white", textDecoration: "none" }}
-            >
-              Visit Website <i class="fa-solid fa-right-to-bracket"></i>
-            </a>
-          </button>
+
+      {/* Card Body */}
+      <div className="p-4">
+        {props.skills ? (
+          <h5 className="text-[#414a4c] text-lg font-semibold mb-2">
+            {props.title}
+          </h5>
+        ) : (
+          <h5 className="font-bold text-lg mb-2">{props.title}</h5>
         )}
-      </Card.Body>
-    </Card>
+
+        <p className="text-[#414a4c] font-light mb-4">{props.text}</p>
+
+        {/* Visit Website Button */}
+        {!props.skills && (
+          <a
+            href={props.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white text-sm font-medium px-4 py-2 rounded transition-colors"
+          >
+            Visit Website
+            <i className="fa-solid fa-right-to-bracket"></i>
+          </a>
+        )}
+      </div>
+    </div>
   );
 }

@@ -19,12 +19,22 @@ export default function Header(props) {
             </h2>
 
             {/* Button */}
-            <a
-              href="#skills"
-              className="mt-6 inline-flex items-center gap-2 rounded-md bg-[#476A77] px-5 py-3 text-lg font-semibold text-white shadow-sm hover:bg-[#395560] transition-colors"
-            >
-              See my Skills <i className="fa-solid fa-code"></i>
-            </a>
+            {/* <button>
+              <a
+                href="#skills"
+                className="mt-6 inline-flex items-center gap-2 rounded-md bg-[#476A77] px-5 py-3 text-lg font-semibold text-white shadow-sm hover:bg-[#395560] transition-colors"
+              >
+                See my Skills <i className="fa-solid fa-code"></i>
+              </a>
+            </button> */}
+            <button className="btn btn-neutral">Neutral</button>
+            <button className="btn btn-primary">Primary</button>
+            <button className="btn btn-secondary">Secondary</button>
+            <button className="btn btn-accent">Accent</button>
+            <button className="btn btn-info">Info</button>
+            <button className="btn btn-success">Success</button>
+            <button className="btn btn-warning">Warning</button>
+            <button className="btn btn-error">Error</button>
           </div>
 
           {/* Right Column (sm={4}) */}

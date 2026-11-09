@@ -1,19 +1,29 @@
 import React from "react";
-import { Container, Nav, Navbar } from "react-bootstrap";
 
 export default function Navigation(props) {
   return (
-    <>
-      <Navbar style={{ fontWeight: "bold" }}>
-        <Container>
-          <Navbar.Brand href="#home">Wion</Navbar.Brand>
-          <Nav className="me-auto">
-            <Nav.Link href="#skills">Skills</Nav.Link>
-            <Nav.Link href="#projects">Projects</Nav.Link>
-            <Nav.Link href="#contacts">Contacts</Nav.Link>
-          </Nav>
-        </Container>
-      </Navbar>
-    </>
+    <nav className="w-full font-bold">
+      <div className="container mx-auto px-4 flex items-center">
+        {/* Brand */}
+        <a href="#home" className="text-xl font-bold mr-8">
+          Wion
+        </a>
+
+        {/* Navigation Links */}
+        <div className="flex items-center gap-6">
+          <a href="#skills" className="hover:text-blue-600 transition-colors">
+            Skills
+          </a>
+
+          <a href="#projects" className="hover:text-blue-600 transition-colors">
+            Projects
+          </a>
+
+          <a href="#contacts" className="hover:text-blue-600 transition-colors">
+            Contacts
+          </a>
+        </div>
+      </div>
+    </nav>
   );
 }

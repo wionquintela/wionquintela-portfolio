@@ -1,13 +1,6 @@
 import React, { useState } from "react";
-import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 
 export default function Contacts(props) {
-  const image = { width: "300px" };
-
   const [showPopover, setShowPopover] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
 
@@ -16,7 +9,7 @@ export default function Contacts(props) {
       .writeText(text)
       .then(() => {
         setShowPopover(true);
-        setTimeout(() => setShowPopover(false), 2000); // Hide popover after 2 seconds
+        setTimeout(() => setShowPopover(false), 2000);
       })
       .catch((err) => {
         console.error("Failed to copy email: ", err);
@@ -24,118 +17,99 @@ export default function Contacts(props) {
   };
 
   return (
-    <Container
-      className={props.className + " d-flex justify-content-center text-center"}
-    >
-      <Card
-        style={{ maxWidth: "100%", marginBottom: "100px" }}
+    <div className={`${props.className || ""} flex justify-center text-center`}>
+      <div
         id="contacts"
-        className="shadow"
+        className="w-full max-w-full mb-[100px] shadow-lg rounded-lg overflow-hidden"
       >
-        <Row lg={2} sm={1} md={1} xs={1}>
-          <Col sm={4}>
-            <Card.Img
-              variant="right"
+        <div className="grid grid-cols-1 sm:grid-cols-[4fr_8fr]">
+          {/* Profile Image */}
+          <div className="flex justify-center">
+            <img
               src="./assets/contactProfile.png"
-              style={image}
+              alt="Contact Profile"
+              className="w-full max-w-[300px] h-auto object-cover"
             />
-          </Col>
-          <Col
-            sm={8}
-            className="footerContent d-flex align-items-center justify-content-center"
-          >
-            <Card.Body>
-              <div className="footerContentText">
-                <Card.Title>
-                  <h1 className="display-3" style={{ fontWeight: "bold" }}>
-                    Wion Quintela
-                  </h1>
+          </div>
 
-                  <h6>
-                    <span
-                      style={{
-                        cursor: "pointer",
-                        color: isHovered ? "blue" : "inherit",
-                      }}
-                      onClick={() =>
-                        copyToClipboard("wionquintela06@gmail.com")
-                      }
-                      onMouseEnter={() => setIsHovered(true)}
-                      onMouseLeave={() => setIsHovered(false)}
-                    >
-                      <i style={{ color: "green" }}>wionquintela06@gmail.com</i>
+          {/* Contact Content */}
+          <div className="flex items-center justify-center">
+            <div className="w-full p-6">
+              <div className="footerContentText">
+                <h1 className="text-5xl md:text-6xl font-bold">
+                  Wion Quintela
+                </h1>
+
+                <h6 className="mt-3">
+                  <span
+                    className={`cursor-pointer transition-colors ${
+                      isHovered ? "text-blue-600" : "text-inherit"
+                    }`}
+                    onClick={() => copyToClipboard("wionquintela06@gmail.com")}
+                    onMouseEnter={() => setIsHovered(true)}
+                    onMouseLeave={() => setIsHovered(false)}
+                  >
+                    <i className="text-green-600">wionquintela06@gmail.com</i>
+                  </span>
+
+                  {showPopover && (
+                    <span className="ml-2 inline-block bg-green-600 text-white px-2 py-1 rounded">
+                      Copied!
                     </span>
-                    {showPopover && (
-                      <span
-                        style={{ marginLeft: "5px", color: "white" }}
-                        className="bg-success p-2 rounded"
-                      >
-                        Copied!
-                      </span>
-                    )}
-                  </h6>
-                </Card.Title>
-                <Card.Text style={{ padding: "15px", color: "#414a4c" }}>
-                  Hello, I am a Computer Science freshman from University of Caloocan City. I make a lot of side projects to
-                  further my programming skills and aim for a career as a
-                  Software Engineer/Front End Developer. I am passionate about
-                  anything coding and look forward to sharing my knowledge with
-                  others.
-                </Card.Text>
+                  )}
+                </h6>
               </div>
-              <Row
-                className="socialLinks justify-content-center"
-                lg={4}
-                md={4}
-                sm={4}
-                xs={4}
-              >
-                <Col>
-                  <a
-                    href="https://web.facebook.com/wion.quintela06/"
-                    target="_blank"
-                  >
-                    <i
-                      className="fab fa-facebook fa-3x"
-                      style={{ color: "#74C0FC" }}
-                    ></i>
-                  </a>
-                </Col>
-                <Col>
-                  <a href="https://github.com/wionquintela" target="_blank">
-                    <i
-                      className="fab fa-github fa-3x"
-                      style={{ color: "#b197fc" }}
-                    ></i>
-                  </a>
-                </Col>
-                <Col>
-                  <a
-                    href="https://www.linkedin.com/in/wion-quintela-07857a2b5/"
-                    target="_blank"
-                  >
-                    <i
-                      className="fab fa-linkedin fa-3x"
-                      style={{ color: "#b197fc" }}
-                    ></i>
-                  </a>
-                </Col>
-                <Col>
-                  <a
-                    href="https://www.youtube.com/channel/UC4WftbieTcS90rvqLTguyZA"
-                    target="_blank"
-                  >
-                    <i
-                      className="fab fa-youtube fa-3x"
-                      style={{ color: "#ff4040" }}
-                    ></i>
-                  </a>
-                </Col>
-              </Row>
-            </Card.Body>
-          </Col>
-        </Row>
-      </Card>
-    </Container>
+
+              <p className="p-[15px] text-[#414a4c]">
+                Hello, I am a Computer Science freshman from University of
+                Caloocan City. I make a lot of side projects to further my
+                programming skills and aim for a career as a Software
+                Engineer/Front End Developer. I am passionate about anything
+                coding and look forward to sharing my knowledge with others.
+              </p>
+
+              {/* Social Links */}
+              <div className="socialLinks flex justify-center items-center gap-8 mt-4">
+                <a
+                  href="https://web.facebook.com/wion.quintela06/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#74C0FC] text-4xl hover:scale-110 transition-transform"
+                >
+                  <i className="fab fa-facebook"></i>
+                </a>
+
+                <a
+                  href="https://github.com/wionquintela"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#b197fc] text-4xl hover:scale-110 transition-transform"
+                >
+                  <i className="fab fa-github"></i>
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/in/wion-quintela-07857a2b5/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#b197fc] text-4xl hover:scale-110 transition-transform"
+                >
+                  <i className="fab fa-linkedin"></i>
+                </a>
+
+                <a
+                  href="https://www.youtube.com/channel/UC4WftbieTcS90rvqLTguyZA"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#ff4040] text-4xl hover:scale-110 transition-transform"
+                >
+                  <i className="fab fa-youtube"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
