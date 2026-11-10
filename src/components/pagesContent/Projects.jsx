@@ -6,10 +6,8 @@ export default function Projects(props) {
     <section>
       <div className={`container mx-auto px-4 ${props.className || ""}`}>
         <div id="projects">
-          {/* Section Title */}
-          <h1 className="text-5xl md:text-6xl font-bold pt-10">My Projects</h1>
-
-          <p className="mt-2">
+          <h1 className="text-6xl text-base-content">My Projects</h1>
+          <p className="mt-2 text-base-content/75 text-lg">
             Here are the projects that I had/have been working on to increase my
             programming skills.
           </p>

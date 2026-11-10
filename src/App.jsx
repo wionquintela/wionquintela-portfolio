@@ -11,8 +11,8 @@ function App() {
       <div className="mx-40">
         {/* <Navigation /> */}
         <Header className="headerSection" />
-        <Skills className="contentSection text-center" />
         <Projects className="contentSection text-center" />
+        <Skills className="contentSection text-center" />
         {/* <Contacts className="contentSection" /> */}
         <Footer className="footerSection text-center" />
       </div>
