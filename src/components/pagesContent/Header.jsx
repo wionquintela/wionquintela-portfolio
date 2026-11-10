@@ -1,50 +1,31 @@
-export default function Header(props) {
+export default function Header() {
   return (
-    <section className="text-center">
-      {/* Container */}
-      <div
-        className={`mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 ${props.className || ""}`}
-      >
-        {/* Row & Columns using CSS Grid */}
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-12 items-center">
-          {/* Left Column (sm={8}) */}
-          <div className="sm:col-span-8 pt-8 sm:pt-12 text-center sm:text-left">
-            <h1 className="text-5xl sm:text-7xl font-bold tracking-tight text-gray-900">
-              Hello, I am{" "}
-              <span className="inline text-[#476A77]">Wion Quintela</span>
-            </h1>
-
-            <h2 className="mt-4 text-2xl sm:text-3xl text-[#414a4c] font-medium">
-              Programmer/Web Developer
-            </h2>
-
-            {/* Button */}
-            {/* <button>
-              <a
-                href="#skills"
-                className="mt-6 inline-flex items-center gap-2 rounded-md bg-[#476A77] px-5 py-3 text-lg font-semibold text-white shadow-sm hover:bg-[#395560] transition-colors"
-              >
-                See my Skills <i className="fa-solid fa-code"></i>
-              </a>
-            </button> */}
-            <button className="btn btn-neutral">Neutral</button>
-            <button className="btn btn-primary">Primary</button>
-            <button className="btn btn-secondary">Secondary</button>
-            <button className="btn btn-accent">Accent</button>
-            <button className="btn btn-info">Info</button>
-            <button className="btn btn-success">Success</button>
-            <button className="btn btn-warning">Warning</button>
-            <button className="btn btn-error">Error</button>
+    <section className="flex flex-wrap md:flex-nowrap justify-start items-center">
+      <div className="shrink-0">
+        <img
+          src="./me.png"
+          alt="Wion Quintela"
+          className="w-[250px] h-auto rounded-lg object-cover"
+        />
+      </div>
+      <div className="mx-5 mt-5 md:mt-0">
+        <div className="flex">
+          <h1 className="text-7xl text-base-content">Wion Quintela</h1>
+        </div>
+        <div className="flex items-center">
+          <h2 className="pl-2 text-3xl text-base-content/75">
+            Aspiring Full-Stack Developer
+          </h2>
+          <div className="px-2 mx-1 text-base-content/75 flex justify-start items-center gap-3">
+            <i className="fa-brands fa-facebook fa-2xl"></i>
+            <i className="fa-brands fa-github fa-2xl"></i>
+            <i className="fa-brands fa-linkedin fa-2xl"></i>
           </div>
-
-          {/* Right Column (sm={4}) */}
-          <div className="sm:col-span-4 flex justify-center">
-            <img
-              src="./assets/myProfile.png"
-              alt="Wion Quintela"
-              className="w-[300px] h-auto rounded-lg object-cover"
-            />
-          </div>
+        </div>
+        <div className="mt-3 text-lg pl-2 text-base-content/75">
+          I am a Computer Science Student Undergrad at University of Caloocan
+          City. I am passionate about web development especially in making
+          productive and useful web applications that makes a difference.
         </div>
       </div>
     </section>

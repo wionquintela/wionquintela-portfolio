@@ -7,13 +7,15 @@ import Footer from "./components/pagesContent/Footer.jsx";
 
 function App() {
   return (
-    <div className="App" data-theme="cupcake">
-      {/* <Navigation /> */}
-      <Header className="headerSection" />
-      <Skills className="contentSection text-center" />
-      <Projects className="contentSection text-center" />
-      <Contacts className="contentSection" />
-      <Footer className="footerSection text-center" />
+    <div className="App " data-theme="garden">
+      <div className="mx-40">
+        {/* <Navigation /> */}
+        <Header className="headerSection" />
+        <Skills className="contentSection text-center" />
+        <Projects className="contentSection text-center" />
+        {/* <Contacts className="contentSection" /> */}
+        <Footer className="footerSection text-center" />
+      </div>
     </div>
   );
 }
