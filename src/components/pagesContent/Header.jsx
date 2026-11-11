@@ -12,9 +12,7 @@ export default function Header() {
         </div>
         <div className="mx-5 mt-5 md:mt-0">
           <div className="flex justify-center lg:justify-start items-center">
-            <h1 className="text-6xl lg:text-7xl text-base-content">
-              Wion Quintela
-            </h1>
+            <h1 className="text-5xl text-base-content">Wion Quintela</h1>
           </div>
           <div className="flex flex-wrap justify-center lg:justify-start items-center">
             <h2 className="pl-2 py-1 text-secondary text-2xl lg:text-3xl">

@@ -12,7 +12,7 @@ function App() {
         {/* <Navigation /> */}
         <Header className="headerSection" />
         <Projects className="contentSection " />
-        {/* <Skills className="contentSection " /> */}
+        <Skills className="contentSection " />
         {/* <Contacts className="contentSection" /> */}
         <Footer className="footerSection " />
       </div>

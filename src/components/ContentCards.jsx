@@ -15,7 +15,7 @@ export default function ContentCards(props) {
       </figure>
 
       <div className="card-body lg:w-3/5">
-        <h2 className="card-title">
+        <h2 className="flex flex-wrap card-title">
           {props.title} &middot;{" "}
           {props.isFinished ? (
             props.year
