@@ -5,9 +5,11 @@ export default [
     year: 2026,
     isFinished: true,
     isLive: false,
+    isPrivate: false,
     image: ["./onboarding.png", "./onboarding2.png", "./onboarding3.png"],
     text: "A MERN-stack web application designed to streamline employee onboarding by centralizing document submissions, automating requirement tracking, and monitoring onboarding progress. Features role-based access, document verification, notifications, and reporting to help HR manage onboarding efficiently.",
-    link: "https://wizzy-sneakers.vercel.app/",
+    github:
+      "https://github.com/Buklod-Visionaries/Onboarding-Management-and-Tracking-System",
   },
   // {
   //   title: "ShuttleZone",
@@ -24,9 +26,10 @@ export default [
     year: 2025,
     isFinished: false,
     isLive: false,
+    isPrivate: true,
     image: ["./church.png", "./church2.png", "./church3.png"],
     text: "A responsive church website designed to provide visitors with essential church information and encourage community engagement. Features include a welcome carousel, church background and core values, service schedules, latest articles, upcoming events, and an online prayer request feature. Integrated with Strapi CMS for efficient content management and updates.",
-    link: "https://wizzy-sneakers.vercel.app/",
+    github: "https://github.com/wionquintela/acts-church",
   },
   {
     title: "STEMTask",
@@ -34,8 +37,10 @@ export default [
     year: 2024,
     isFinished: true,
     isLive: true,
+    isPrivate: false,
     image: ["./stemtask.png", "./stemtask2.png", "./stemtask3.png"],
     text: "A web-based task management application developed to help Grade 11 students stay organized and manage their academic workload more effectively. Features task organization, priority management, deadline tracking, and an intuitive interface designed to simplify assignment planning and improve productivity.",
-    link: "https://stemtaskmanagement-lake.vercel.app/",
+    github: "https://github.com/stemtaskmanagement/stemtaskmanagement",
+    live: "https://stemtaskmanagement-lake.vercel.app/",
   },
 ];

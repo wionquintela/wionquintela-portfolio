@@ -2,10 +2,14 @@ import { SquareArrowUpRightExit } from "lucide-react";
 export default function ContentCards(props) {
   return (
     <div className="flex flex-col lg:flex-row card bg-base-100 shadow-sm">
-      <figure className="hover-gallery lg:w-2/5">
+      <figure className=" hover-gallery lg:w-2/5">
         {props.image.map((image, index) => (
           <div key={index}>
-            <img alt={props.title} src={image} className="rounded-none" />
+            <img
+              alt={props.title}
+              src={image}
+              className="h-full rounded-none"
+            />
           </div>
         ))}
       </figure>
@@ -30,14 +34,20 @@ export default function ContentCards(props) {
         </div>
         <p>{props.text}</p>
         <div className="lg:flex justify-end">
-          <a href="">
-            <button className="btn btn-soft w-full lg:w-auto">
-              View on GitHub
+          {props.isPrivate ? (
+            <button className="btn btn-soft w-full lg:w-auto" disabled>
+              Not Yet Accessible
             </button>
-          </a>
+          ) : (
+            <a href={props.github} target="_blank" rel="noopener noreferrer">
+              <button className="btn btn-soft w-full lg:w-auto">
+                View on GitHub
+              </button>
+            </a>
+          )}
           {props.isLive ? (
-            <div className="my-2">
-              <a href="">
+            <div className="my-2 lg:my-auto lg:ml-1">
+              <a href={props.live} target="_blank">
                 <button className="btn btn-neutral w-full lg:w-auto">
                   Live Demo <SquareArrowUpRightExit />
                 </button>
