@@ -1,45 +1,62 @@
+import { SquareArrowUpRightExit } from "lucide-react";
 export default function ContentCards(props) {
   return (
-    <div
-      className={`w-full shadow-lg rounded-lg overflow-hidden ${
-        props.skills ? "max-w-[600px]" : "max-w-full"
-      }`}
-    >
-      {/* Image */}
-      <div className="flex justify-center items-center min-h-[100px]">
-        <img
-          src={props.image}
-          alt={props.title}
-          className={`h-auto object-contain ${
-            props.skills ? "w-[80px]" : "w-full"
-          }`}
-        />
-      </div>
+    <div className="flex flex-col lg:flex-row card bg-base-100 shadow-sm">
+      <figure className=" hover-gallery lg:w-2/5">
+        {props.image.map((image, index) => (
+          <div key={index}>
+            <img
+              alt={props.title}
+              src={image}
+              className="h-full rounded-none"
+            />
+          </div>
+        ))}
+      </figure>
 
-      {/* Card Body */}
-      <div className="p-4">
-        {props.skills ? (
-          <h5 className="text-[#414a4c] text-lg font-semibold mb-2">
-            {props.title}
-          </h5>
-        ) : (
-          <h5 className="font-bold text-lg mb-2">{props.title}</h5>
-        )}
-
-        <p className="text-[#414a4c] font-light mb-4">{props.text}</p>
-
-        {/* Visit Website Button */}
-        {!props.skills && (
-          <a
-            href={props.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white text-sm font-medium px-4 py-2 rounded transition-colors"
-          >
-            Visit Website
-            <i className="fa-solid fa-right-to-bracket"></i>
-          </a>
-        )}
+      <div className="card-body lg:w-3/5">
+        <h2 className="flex flex-wrap card-title">
+          {props.title} &middot;{" "}
+          {props.isFinished ? (
+            props.year
+          ) : (
+            <div className="badge badge-dash badge-secondary">
+              In Development
+            </div>
+          )}
+        </h2>
+        <div className="flex justify-start items-center">
+          {props.role.map((role, index) => (
+            <div key={index} className="mr-1">
+              <div className="badge badge-soft badge-accent">{role}</div>
+            </div>
+          ))}
+        </div>
+        <p>{props.text}</p>
+        <div className="lg:flex justify-end">
+          {props.isPrivate ? (
+            <button className="btn btn-soft w-full lg:w-auto" disabled>
+              Not Yet Accessible
+            </button>
+          ) : (
+            <a href={props.github} target="_blank" rel="noopener noreferrer">
+              <button className="btn btn-soft w-full lg:w-auto">
+                View on GitHub
+              </button>
+            </a>
+          )}
+          {props.isLive ? (
+            <div className="my-2 lg:my-auto lg:ml-1">
+              <a href={props.live} target="_blank">
+                <button className="btn btn-neutral w-full lg:w-auto">
+                  Live Demo <SquareArrowUpRightExit />
+                </button>
+              </a>
+            </div>
+          ) : (
+            ""
+          )}
+        </div>
       </div>
     </div>
   );

@@ -3,7 +3,6 @@
   themes: all;
 }
 
-
 @font-face {
   font-family: myFont;
   src: url("../public/fonts/ps.ttf");
@@ -13,4 +12,55 @@
   font-family: myFont;
   /* -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.marquee {
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: 2rem;
+  /* Optional: fade edges smoothly */
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10%,
+    black 90%,
+    transparent
+  );
+}
+
+.marquee-track {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+  min-width: 100%;
+  animation: scroll 20s linear infinite;
+}
+
+/* Pause scrolling when a user hovers over the text */
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    /* Moves by 100% of one track plus the flex gap */
+    transform: translateX(calc(-100% - 2rem));
+  }
+}
+
+/* Respect user motion preferences for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none;
+  }
 }

@@ -7,14 +7,14 @@ import Footer from "./components/pagesContent/Footer.jsx";
 
 function App() {
   return (
-    <div className="App " data-theme="garden">
-      <div className="mx-40">
+    <div className="App" data-theme="garden">
+      <div className="mx-auto lg:mx-40">
         {/* <Navigation /> */}
         <Header className="headerSection" />
-        <Projects className="contentSection text-center" />
-        <Skills className="contentSection text-center" />
+        <Projects className="contentSection " />
+        <Skills className="contentSection " />
         {/* <Contacts className="contentSection" /> */}
-        <Footer className="footerSection text-center" />
+        <Footer className="footerSection " />
       </div>
     </div>
   );
