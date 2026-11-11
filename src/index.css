@@ -3,7 +3,6 @@
   themes: all;
 }
 
-
 @font-face {
   font-family: myFont;
   src: url("../public/fonts/ps.ttf");
@@ -13,4 +12,8 @@
   font-family: myFont;
   /* -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; */
+}
+
+html {
+  scroll-behavior: smooth;
 }
