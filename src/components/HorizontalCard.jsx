@@ -5,7 +5,7 @@ export default function HorizontalCard(props) {
         <img
           src={props.image}
           // alt={props.title}
-          className="w-2/3 object-contain"
+          className="w-2/3 object-contain lg:scale-65"
         />
       </div>
       <div className="w-3/4 flex justify-start items-center px-1 text-sm">
