@@ -14,8 +14,8 @@ function App() {
         <Projects className="contentSection " />
         <Skills className="contentSection " />
         {/* <Contacts className="contentSection" /> */}
-        <Footer className="footerSection " />
       </div>
+      <Footer className="footerSection " />
     </div>
   );
 }
