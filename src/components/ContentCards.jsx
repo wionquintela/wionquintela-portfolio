@@ -32,7 +32,7 @@ export default function ContentCards(props) {
             </div>
           ))}
         </div>
-        <p>{props.text}</p>
+        <p className="text-sm">{props.text}</p>
         <div className="lg:flex justify-end">
           {props.isPrivate ? (
             <button className="btn btn-soft w-full lg:w-auto" disabled>
