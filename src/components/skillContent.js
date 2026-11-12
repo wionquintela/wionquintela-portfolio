@@ -1,47 +1,57 @@
+import {
+  faReact,
+  faNodeJs,
+  faGitAlt,
+  faBootstrap,
+  faCss3Alt,
+} from "@fortawesome/free-brands-svg-icons";
+
+import { faDatabase, faCode } from "@fortawesome/free-solid-svg-icons";
+
 export default [
   {
     title: "ReactJS",
-    image: "./assets/reactIcon.png",
+    icon: faReact,
     expertise: "Intermediate",
   },
   {
     title: "TailwindCSS",
-    image: "./assets/tailwind.png",
+    icon: faCss3Alt,
     expertise: "Intermediate",
   },
   {
     title: "ExpressJS",
-    image: "./assets/nodejs.png",
+    icon: faNodeJs,
     expertise: "Beginner",
   },
   {
     title: "Postman",
-    image: "./assets/nodejs.png",
+    icon: faCode,
     expertise: "Beginner",
   },
   {
     title: "MongoDB",
-    image: "./assets/nodejs.png",
+    icon: faDatabase,
     expertise: "Beginner",
   },
   {
     title: "Supabase",
-    image: "./assets/nodejs.png",
+    icon: faDatabase,
     expertise: "Beginner",
   },
   {
     title: "Firebase",
-    image: "./assets/nodejs.png",
+    icon: faDatabase,
     expertise: "Beginner",
   },
   {
     title: "Git",
-    image: "./assets/git.png",
+    icon: faGitAlt,
     expertise: "Advanced",
   },
   {
     title: "Strapi",
-    image: "./assets/bootstrap.png",
+    icon: faCode,
     expertise: "Advanced",
   },
 ];
