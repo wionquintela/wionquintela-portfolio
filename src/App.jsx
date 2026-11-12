@@ -4,6 +4,7 @@ import Skills from "./components/pagesContent/Skills.jsx";
 import Projects from "./components/pagesContent/Projects.jsx";
 import Contacts from "./components/pagesContent/Contacts.jsx";
 import Footer from "./components/pagesContent/Footer.jsx";
+import Featured from "./components/pagesContent/Featured.jsx";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <div className="mx-auto lg:mx-40">
         {/* <Navigation /> */}
         <Header className="headerSection" />
+        <Featured />
         <Projects className="contentSection " />
         <Skills className="contentSection " />
         {/* <Contacts className="contentSection" /> */}

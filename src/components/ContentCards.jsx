@@ -1,20 +1,30 @@
 import { SquareArrowUpRightExit } from "lucide-react";
 export default function ContentCards(props) {
   return (
-    <div className="flex flex-col lg:flex-row card bg-base-100 shadow-sm">
-      <figure className=" hover-gallery lg:w-2/5">
-        {props.image.map((image, index) => (
-          <div key={index}>
-            <img
-              alt={props.title}
-              src={image}
-              className="h-full rounded-none"
-            />
-          </div>
-        ))}
-      </figure>
+    <div
+      className={`flex ${props.isFeatured ? "flex-col" : "flex-col lg:flex-row"} card bg-base-100 shadow-sm`}
+    >
+      {props.isFeatured ? (
+        <div className="w-full">
+          <video src={props.video} controls muted>
+            <source src={props.video} type="video/mp4" />
+          </video>
+        </div>
+      ) : (
+        <figure className="hover-gallery lg:w-2/5">
+          {props.image.map((image, index) => (
+            <div key={index}>
+              <img
+                alt={props.title}
+                src={image}
+                className="h-full rounded-none"
+              />
+            </div>
+          ))}
+        </figure>
+      )}
 
-      <div className="card-body lg:w-3/5">
+      <div className={`card-body ${props.isFeatured ? "w-full" : "lg:w-3/5"}`}>
         <h2 className="flex flex-wrap card-title">
           {props.title} &middot;{" "}
           {props.isFinished ? (
