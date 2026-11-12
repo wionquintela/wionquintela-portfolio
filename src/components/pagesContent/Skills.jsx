@@ -4,9 +4,11 @@ export default function Skills(props) {
   return (
     <div>
       <div className="divider">
-        <h1 className="text-5xl text-base-content">Tech Stack</h1>
+        <h1 className="text-5xl text-base-content">My Tech Stack</h1>
       </div>
-      <InfiniteMarquee />
+      <div className="my-20">
+        <InfiniteMarquee />
+      </div>
 
       {/* <section>
       <div className={`container mx-auto px-4 ${props.className || ""}`}>

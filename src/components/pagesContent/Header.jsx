@@ -19,9 +19,21 @@ export default function Header() {
               Aspiring Full-Stack Developer
             </h2>
             <div className="px-2 mx-1 py-2 my-3 text-base-content/75 flex justify-start items-center gap-3">
-              <i className="fa-brands fa-facebook fa-2xl"></i>
-              <i className="fa-brands fa-github fa-2xl"></i>
-              <i className="fa-brands fa-linkedin fa-2xl"></i>
+              <a
+                href="https://www.facebook.com/wion.quintela06"
+                target="_blank"
+              >
+                <i className="fa-brands fa-facebook fa-2xl hover:text-secondary"></i>
+              </a>
+              <a href="https://github.com/wionquintela" target="_blank">
+                <i className="fa-brands fa-github fa-2xl hover:text-secondary"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/wion-quintela-07857a2b5/"
+                target="_blank"
+              >
+                <i className="fa-brands fa-linkedin fa-2xl hover:text-secondary"></i>
+              </a>
             </div>
           </div>
           <div className="mt-3 text-md lg:text-lg px-2 text-base-content/75">
@@ -45,10 +57,10 @@ export default function Header() {
               </ul>
             </div>
           </div> */}
-          <div className="my-5 lg:my-3 flex justify-center lg:justify-start items-center">
+          <div className="my-5 lg:my-3">
             <a href="#projects">
-              <button className="py-5 btn btn-outline btn-block text-md lg:text-lg">
-                Go to Projects <MoveRight />
+              <button className="py-5 btn btn-secondary w-full lg:w-auto text-md lg:text-lg">
+                View Projects <MoveRight />
               </button>
             </a>
           </div>
