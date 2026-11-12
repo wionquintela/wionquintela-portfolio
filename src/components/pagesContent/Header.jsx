@@ -3,12 +3,20 @@ export default function Header() {
   return (
     <div>
       <section className="mt-20 flex flex-wrap md:flex-nowrap justify-center lg:justify-start items-center">
-        <div className="shrink-0">
+        <div className="shrink-0 hover-3d">
           <img
             src="./me.png"
             alt="Wion Quintela"
             className="w-[200px] lg:w-[250px] h-auto rounded-lg object-cover"
           />
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
         <div className="mx-5 mt-5 md:mt-0">
           <div className="flex justify-center lg:justify-start items-center">
