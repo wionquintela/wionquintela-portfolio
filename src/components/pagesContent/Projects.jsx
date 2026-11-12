@@ -18,7 +18,7 @@ export default function Projects(props) {
         <div className="my-20 grid grid-cols-1 gap-6">
           {projectContent.map((item, index) => {
             return (
-              <div id={index}>
+              <div key={index}>
                 <ContentCards {...item} />
               </div>
             );

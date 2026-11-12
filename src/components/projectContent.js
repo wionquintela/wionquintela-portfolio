@@ -7,7 +7,7 @@ export default [
     isLive: false,
     isPrivate: false,
     image: ["./onboarding.png", "./onboarding2.png", "./onboarding3.png"],
-    text: "A MERN-stack web application designed to streamline employee onboarding by centralizing document submissions, automating requirement tracking, and monitoring onboarding progress. Features role-based access, document verification, notifications, and reporting to help HR manage onboarding efficiently.",
+    text: "A MERN-stack web application that addresses the challenges of manual employee onboarding by centralizing document submissions, automating requirement tracking, and providing real-time progress monitoring. It helps HR reduce administrative workload, minimize manual tracking, and ensure employees complete their onboarding requirements efficiently through role-based access, document verification, automated notifications, and reporting.",
     github:
       "https://github.com/Buklod-Visionaries/Onboarding-Management-and-Tracking-System",
   },
@@ -28,7 +28,7 @@ export default [
     isLive: false,
     isPrivate: true,
     image: ["./church.png", "./church2.png", "./church3.png"],
-    text: "A responsive church website designed to provide visitors with essential church information and encourage community engagement. Features include a welcome carousel, church background and core values, service schedules, latest articles, upcoming events, and an online prayer request feature. Integrated with Strapi CMS for efficient content management and updates.",
+    text: "A responsive church website built to strengthen community engagement and make essential church information easily accessible to visitors and members. It provides a centralized platform for discovering service schedules, exploring the church's mission and values, staying updated on articles and upcoming events, and submitting prayer requests online. Integrated with Strapi CMS, it enables efficient content management and seamless website updates.",
     github: "https://github.com/wionquintela/acts-church",
   },
   {
@@ -39,7 +39,7 @@ export default [
     isLive: true,
     isPrivate: false,
     image: ["./stemtask.png", "./stemtask2.png", "./stemtask3.png"],
-    text: "A web-based task management application developed to help Grade 11 students stay organized and manage their academic workload more effectively. Features task organization, priority management, deadline tracking, and an intuitive interface designed to simplify assignment planning and improve productivity.",
+    text: "A web-based task management application developed to address the challenges Grade 11 students face in organizing academic tasks and keeping track of deadlines. It provides a centralized platform for managing assignments, prioritizing tasks, and monitoring upcoming deadlines, helping students stay organized, reduce the risk of missed submissions, and manage their academic workload more effectively.",
     github: "https://github.com/stemtaskmanagement/stemtaskmanagement",
     live: "https://stemtaskmanagement-lake.vercel.app/",
   },
