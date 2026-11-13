@@ -22,9 +22,17 @@ export default function Skills(props) {
                 return (
                   <div
                     id={index}
-                    className={`my-1 ${index % 2 === 0 ? "mr-1 ml-5 lg:mr-1 lg:ml-1" : "ml-1 mr-5 lg:mr-1 lg:ml-1"}`}
+                    className={`my-1 hover-3d ${index % 2 === 0 ? "mr-1 ml-5 lg:mr-1 lg:ml-1" : "ml-1 mr-5 lg:mr-1 lg:ml-1"}`}
                   >
                     <HorizontalCard {...skill} />
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
                   </div>
                 );
               })}
@@ -41,9 +49,17 @@ export default function Skills(props) {
                 return (
                   <div
                     id={index}
-                    className={`my-1 ${index % 2 === 0 ? "mr-1 ml-5 lg:mr-1 lg:ml-1" : "ml-1 mr-5 lg:mr-1 lg:ml-1"}`}
+                    className={`my-1 hover-3d ${index % 2 === 0 ? "mr-1 ml-5 lg:mr-1 lg:ml-1" : "ml-1 mr-5 lg:mr-1 lg:ml-1"}`}
                   >
                     <HorizontalCard {...skill} />
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
                   </div>
                 );
               })}
@@ -60,9 +76,17 @@ export default function Skills(props) {
                 return (
                   <div
                     id={index}
-                    className={`my-1 ${index % 2 === 0 ? "mr-1 ml-5 lg:mr-1 lg:ml-1" : "ml-1 mr-5 lg:mr-1 lg:ml-1"}`}
+                    className={`my-1 hover-3d ${index % 2 === 0 ? "mr-1 ml-5 lg:mr-1 lg:ml-1" : "ml-1 mr-5 lg:mr-1 lg:ml-1"}`}
                   >
                     <HorizontalCard {...skill} />
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
                   </div>
                 );
               })}
