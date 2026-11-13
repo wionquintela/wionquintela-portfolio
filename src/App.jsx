@@ -15,7 +15,7 @@ function App() {
         <Featured />
         <Projects className="contentSection " />
         <Skills className="contentSection " />
-        {/* <Contacts className="contentSection" /> */}
+        <Contacts />
       </div>
       <Footer className="footerSection " />
     </div>
