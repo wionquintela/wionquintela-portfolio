@@ -26,7 +26,7 @@ export default function Header() {
             <h2 className="pl-2 py-1 text-secondary text-2xl lg:text-3xl">
               Aspiring Full-Stack Developer
             </h2>
-            <div className="px-2 mx-1 py-2 my-3 text-base-content/75 flex justify-start items-center gap-3">
+            {/* <div className="px-2 mx-1 py-2 my-3 text-base-content/75 flex justify-start items-center gap-3">
               <a
                 href="https://www.facebook.com/wion.quintela06"
                 target="_blank"
@@ -42,7 +42,7 @@ export default function Header() {
               >
                 <i className="fa-brands fa-linkedin fa-2xl hover:text-secondary"></i>
               </a>
-            </div>
+            </div> */}
           </div>
           <div className="mt-3 text-md lg:text-lg px-2 text-base-content/75">
             I am a Computer Science Student Undergrad at University of Caloocan
@@ -67,7 +67,7 @@ export default function Header() {
           </div> */}
           <div className="my-5 lg:my-3">
             <a href="#projects">
-              <button className="py-5 btn btn-secondary w-full lg:w-auto text-md lg:text-lg">
+              <button className="py-5 btn btn-neutral w-full lg:w-auto text-md lg:text-lg">
                 View Projects <MoveRight />
               </button>
             </a>
